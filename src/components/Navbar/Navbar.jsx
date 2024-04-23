@@ -34,10 +34,7 @@ export default function Navbar() {
   return (
     <Nav>
       <section className='MOBILE-MENU flex'>
-        <Burger
-          className='HAMBURGER-ICON space-y-2'
-          onClick={() => setIsNavOpen((prev) => !prev)}
-        >
+        <Burger onClick={() => setIsNavOpen((prev) => !prev)}>
           {isNavOpen ? (
             <svg
               className='h-8 w-8 text-gray-600'
